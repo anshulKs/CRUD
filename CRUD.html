@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create, Read,Update, Delete</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<script src="CRUD.js"></script>
+
+		<style type="text/css">
+			.formContainer{
+				width: 80%;
+			}
+		</style>
+
+</head>
+<body>
+	<div class="container formContainer">
+		<fieldset>
+			<form id="form">
+				<table class="table table-responsive"> 
+					<tr>
+						<td>
+							Name
+						</td>
+						<td>
+							<input type="text" id="txtName" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							age
+						</td>
+						<td>
+							<input type="number" id="numberAge" max="60" min="18" required>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							password
+						</td>
+						<td>
+							<input type="password" id="txtPassword" required>
+						</td>
+					</tr>
+					<td>
+						<td>
+							<input type="submit" id="buttonAdd" value="Add">
+						</td>
+					</td>
+				</table>
+			</form>
+		</fieldset>
+	</div>
+
+	<div class="container">
+		<table class="table table-responsive " id="displayTable">
+			<thead>
+				<tr>
+					<td>
+						Name
+					</td>
+					<td>
+						Age
+					</td>
+					<td>
+						Delete Record
+					</td>
+					<td>
+						Update Record
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+					
+			</tbody>
+			
+		</table>
+	</div>
+
+</body>
+</html>
